@@ -1,0 +1,49 @@
+{
+  "name": "redis-emitter",
+  "version": "0.1.0",
+  "description": "Redis pub/sub as an EventEmitter",
+  "main": "dist/index.js",
+  "types": "dist/index.d.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toomeefed/redis-emitter.git"
+  },
+  "keywords": [
+    "redis",
+    "pubsub",
+    "events",
+    "redis-events",
+    "event-emitter"
+  ],
+  "author": "楼教主 <fe.52cik@gmail.com> (https://www.52cik.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/toomeefed/redis-emitter/issues"
+  },
+  "homepage": "https://github.com/toomeefed/redis-emitter#readme",
+  "engines": {
+    "node": ">=8"
+  },
+  "dependencies": {
+    "@types/redis": "^2.8.14"
+  },
+  "peerDependencies": {
+    "redis": "^2.8.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.23",
+    "@types/node": "^12.12.14",
+    "jest": "^24.9.0",
+    "redis": "^2.8.0",
+    "ts-jest": "^24.2.0",
+    "typescript": "^3.7.2"
+  }
+}
